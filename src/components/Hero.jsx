@@ -10,7 +10,7 @@ function Hero() {
         <img
           src="N2HMMGN-2.png"
           alt="burger image"
-          className="w-[400px] max-w-[500px] hover:-translate-y-5 transition-all duration-300"
+          className="w-full max-w-[500px] hover:-translate-y-5 transition-all duration-300"
         />
       </div>
       <div className="flex-1">
