@@ -22,7 +22,7 @@ function Hero() {
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes.
         </p>
-        <div className="flex gap-16 sm:gap-24 mt-16">
+        <div className="flex gap-12 sm:gap-24 mt-16">
           <div className="flex flex-col justify-center items-center">
             <svg
               className="fill-yellow-400 w-16 h-16"
