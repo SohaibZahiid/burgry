@@ -21,3 +21,7 @@ h3,
 h4 {
   font-family: "Oswald";
 }
+
+.btn {
+  @apply px-8 py-4 bg-yellow-400 text-black rounded block w-max mt-16 hover:opacity-90 duration-300;
+}

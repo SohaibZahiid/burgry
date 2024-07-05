@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 function MenuItem({ id, title, desc, price, image, category, activeCategory }) {
   return (
     <>
       {category === activeCategory && (
-        <article key={id} className="flex flex-col gap-4">
+        <motion.article
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          key={id}
+          className="flex flex-col gap-4"
+        >
           <div className="min-h-[250px] bg-gray-800 rounded p-8 flex justify-center items-center hover:bg-yellow-400 transition-all duration-300">
             <img
               src={`menu/${image}`}
@@ -15,7 +23,7 @@ function MenuItem({ id, title, desc, price, image, category, activeCategory }) {
             <p>{desc}</p>
           </div>
           <h4 className="font-bold text-2xl text-yellow-400">{price}€</h4>
-        </article>
+        </motion.article>
       )}
     </>
   );

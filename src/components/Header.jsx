@@ -20,10 +20,10 @@ function header() {
 
   return (
     <header className="flex justify-between items-center h-20">
-      <h2 className="font-bold text-5xl text-white uppercase">
+      <h2 className="font-bold text-4xl text-white uppercase">
         Bur<span className="text-yellow-400">gry</span>
       </h2>
-      <ul className="gap-12 text-xl hidden md:flex">
+      <ul className="gap-12 text-md hidden md:flex">
         {links.map((link) => (
           <li key={link.id}>
             <a

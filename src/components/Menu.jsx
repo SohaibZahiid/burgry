@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MenuItem from "./MenuItem";
+import { AnimatePresence, motion } from "framer-motion";
 
 const data = [
   {
@@ -97,9 +98,15 @@ function Menu() {
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
-          {data.map((item) => (
-            <MenuItem key={item.id} {...item} activeCategory={activeCategory} />
-          ))}
+          <AnimatePresence>
+            {data.map((item) => (
+              <MenuItem
+                key={item.id}
+                {...item}
+                activeCategory={activeCategory}
+              />
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>
