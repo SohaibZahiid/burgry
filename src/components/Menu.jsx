@@ -80,12 +80,12 @@ function Menu() {
         ligula eget dolor. Aenean massa.
       </p>
       <div>
-        <div className="flex justify-center gap-8 mb-10">
+        <div className="flex justify-center gap-2 sm:gap-8 mb-10">
           {buttons.map((btn) => (
             <button
               key={btn}
               onClick={() => setActiveCategory(btn)}
-              className={`flex-1 md:flex-none w-40 px-8 py-4 rounded block mt-16  capitalize
+              className={`flex-1 md:flex-none px-2 sm:px-8 w-40 py-4 rounded block mt-16  capitalize
                 ${
                   activeCategory === btn
                     ? "bg-yellow-400 text-black"
